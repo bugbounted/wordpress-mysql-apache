@@ -5,8 +5,8 @@ volumes:
 
 envs:
     - WORDPRESS_DB_HOST: mysql
-    - WORDPRESS_DB_NAME: wordpress
-    - WORDPRESS_DB_USER: dbuser01
+    - WORDPRESS_DB_NAME: dopraxdb
+    - WORDPRESS_DB_USER: dopraxusr
     - WORDPRESS_DB_PASSWORD: random_1
       type: password
 services:
@@ -18,7 +18,7 @@ services:
       envs:
         - MYSQL_ROOT_PASSWORD: random
           type: password
-        - MYSQL_DATABASE: wordpress
-        - MYSQL_USER: dbuser01
+        - MYSQL_DATABASE: dopraxdb
+        - MYSQL_USER: dopraxdbusr
         - MYSQL_PASSWORD: random_1
           type: password
